@@ -1,0 +1,18 @@
+export default [
+    'everyday',
+    'each-two-days',
+    'twice-a-week',
+    'every-week',
+    'twice-a-month',
+    'once-a-month',
+    'each-three-month',
+    'each-6-month',
+    'once-a-year',
+    'every-monday',
+    'every-tuesday',
+    'every-wednesday',
+    'every-thursday',
+    'every-friday',
+    'every-saturday',
+    'every-sunday',
+  ]
