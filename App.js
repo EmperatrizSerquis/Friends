@@ -15,7 +15,7 @@ export default function App() {
   return categorySelected ? 
      (
     <Friends
-      category={categorySelected}
+      category={categorySelected} 
     />
   ) : (
     <Home setCategorySelected={setCategorySelected} />

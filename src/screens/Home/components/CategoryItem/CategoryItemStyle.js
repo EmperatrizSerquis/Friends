@@ -3,22 +3,29 @@ import { colors } from '../../../../constants/colors'
 
 export default styles = StyleSheet.create({
   cardContainer: {
-    marginHorizontal: 30,
+    height: 60,
     marginVertical: 10,
-    padding: 10,
-    minWidth: 90,
-    width: '85%',
-    backgroundColor: colors.blue,
-    maxWidth: 500,
-    height: 50,
-    minHeight: 30,
+    marginHorizontal: 5,
+    borderRadius: 10,
+    backgroundColor: colors.violet,
+    shadowColor: colors.blue,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.5,
+    shadowRadius: 3,
+    elevation: 5,
     justifyContent: 'center',
+    alignContent: 'center',
     alignItems: 'center',
+    flexDirection: 'row',
+    textAlign: 'center',
   },
   text: {
     color: colors.yellow,
-    fontSize: 30,
-    fontFamily: 'Text',
+    fontSize: 25,
+    justifyContent: 'center',
+    alignContent: 'center',
+    alignItems: 'center',
+    fontFamily: 'Label',
 
   }
 })

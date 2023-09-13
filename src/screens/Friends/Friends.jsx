@@ -1,7 +1,6 @@
-import { FlatList, Text, View } from 'react-native'
-import { Header, SearchInput } from '../../components'
+import { FlatList, Text, View, TouchableOpacity } from 'react-native'
+import { Header } from '../../components'
 import React, { useEffect, useState } from 'react'
-
 import allFriends from '../../data/friends'
 import styles from './FriendsStyle'
 
@@ -28,19 +27,21 @@ const Friends = ({ category }) => {
 
   return (
     <View style={styles.container}>
-      <Header title={category}  />
-      <SearchInput onSearch={setKeyword} />
+      <Header title={(category.toUpperCase().replace("-", " "))}  />
+
       <View style={styles.listContainer}>
+
         <FlatList
           data={arrFriends}
           renderItem={({ item }) => (
-            <View>
-              <Text>{item.title}</Text>
+            <View style={styles.nameButton}>
+              <Text style={styles.buttonText}>{item.title}</Text>
             </View>
           )}
           keyExtractor={item => item.id}
         />
       </View>
+
     </View>
   )
 }

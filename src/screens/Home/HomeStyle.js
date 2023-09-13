@@ -18,7 +18,7 @@ export default styles = StyleSheet.create({
   textContainer: {
     textAlign: 'center',
     padding: 10,
-    fontSize: 15,
+    fontSize: 18,
     fontWeight: 'bold',
     backgroundColor: '#7858F2',
     color: '#fff',
@@ -32,6 +32,29 @@ export default styles = StyleSheet.create({
     shadowOpacity: 0.5,
     shadowRadius: 3,
     elevation: 5,
-    marginBottom: 20,
+    marginBottom: 0,
+  },
+  listContainer: {
+    flex: 1,
+   
+  },
+  itemContainer: {
+  
+    height: 40,
+    marginVertical: 10,
+    marginHorizontal: 5,
+    borderRadius: 10,
+    paddingRight: 15,
+    backgroundColor: colors.violet,
+    shadowColor: colors.blue,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.5,
+    shadowRadius: 3,
+    elevation: 5,
+    justifyContent: 'space-between',
+    alignContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+
   },
 })

@@ -8,10 +8,10 @@ import styles from './HomeStyle'
 const Home = ({ setCategorySelected }) => {
   return (
     <View style={styles.container}>
-      {/* <Image style={styles.image} source={{ uri: 'https://eproweb.net/pictures/logos_pics_thumbnails/16/logofriejmTT.png	' }} /> */}
        <Text style={styles.title}>WELCOME TO THE  APP!</Text>
-      <Text style={styles.textContainer}>APP to remember calling friends or clients depending on the category every N amount of time !</Text>
+       <Text style={styles.textContainer}>APP to remember calling friends or clients depending on the category every N amount of time !</Text>
       <Header title={'Friends Categories'} />
+      <View style={styles.listContainer}>
       <FlatList
         data={categories}
         keyExtractor={category => category}
@@ -22,6 +22,7 @@ const Home = ({ setCategorySelected }) => {
           />
         )}
       />
+      </View>
     </View>
   )
 }
