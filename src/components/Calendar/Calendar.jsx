@@ -21,11 +21,11 @@ const Calendar = () => {
     if (type === 'set') {
       const currentDate = selectedDate
       setNextDate(currentDate)
-      setDate(currentDate.toLocaleString)
 
       if(Platform.OS === 'android') {
         toggleDatepicker()
-      }
+        setDate(currentDate)
+      } 
     } else {
       toggleDatepicker()
     }
@@ -55,7 +55,7 @@ const Calendar = () => {
             value={date}
             placeholder="Enter your next contact date"
             placeholderTextColor={"#000"}
-            /* onChangeText={setDate} */
+            onChangeText={setDate}
             editable={false}
             onPressIn={toggleDatepicker}
           />

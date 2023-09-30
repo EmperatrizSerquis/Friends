@@ -25,7 +25,7 @@ export default styles = StyleSheet.create({
         fontSize: 28,
         fontWeight: 'bold',
         textAlign: 'center',
-        backgroundColor: '#0c494fa0',
+        backgroundColor: colors.violet,
     
       },
       description: {

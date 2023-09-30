@@ -16,7 +16,7 @@ export default styles = StyleSheet.create({
   calendarDate: {
     display: 'flex',
     height: '20%',
-    marginVertical: '5',
+    marginVertical: 5,
   },
   input: {
     paddingHorizontal: 2,

@@ -12,7 +12,7 @@ export default styles = StyleSheet.create({
   },
   input: {
     width: '80%',
-    height: 5,
+    height: 50,
     fontSize: 19,
     paddingLeft: 10,
     borderColor: colors.violet,

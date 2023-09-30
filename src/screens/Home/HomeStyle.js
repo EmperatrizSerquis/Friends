@@ -77,7 +77,7 @@ export default styles = StyleSheet.create({
   },
   friendsButton: {
     backgroundColor: colors.blue,
-    paddingHorizontal: 35,
+    paddingHorizontal: 5,
     paddingVertical: 10,
     justifyContent: 'center',
     alignItems: 'center',
