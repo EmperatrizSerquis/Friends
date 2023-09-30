@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.violet,
     paddingLeft: 0,
     paddingVertical: 5,
-    borderRadius: '50%',
+    borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
   }

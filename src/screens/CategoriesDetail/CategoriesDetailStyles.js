@@ -13,7 +13,7 @@ export default styles = StyleSheet.create({
         paddingLeft: 20,
       },
       image: {
-        marginTop: 50,
+        marginTop: 5,
         resizeMode: 'cover',
         justifyContent: 'center',
         height: '100%',

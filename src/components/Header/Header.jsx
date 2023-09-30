@@ -14,11 +14,10 @@ const Header = ({ navigation, title }) => {
         title != 'Home' && (
           <>
           <View style={styles.flexContainer}>
-            <Pressable style={styles.button} onPress={() => navigation.goBack()}>
-                    <Ionicons name="arrow-back-circle" size={40} color="white" />
-                  </Pressable>
+             <Pressable style={styles.button} onPress={() => navigation.goBack()}>
+                <Ionicons name="arrow-back-circle" size={40} color="white" />
+              </Pressable>
             <Text style={styles.text}>{title}</Text>
-            
           </View>
           <DateApp />
           </>

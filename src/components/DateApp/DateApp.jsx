@@ -18,8 +18,7 @@ useEffect(() => {
 
     return (
       <View styles={styles.dateContainer}>
-        <Text styles={styles.date}>{date.format("dddd, DD MMMM")}</Text>
-        <Text styles={styles.time}>{date.format("hh:mm:ss")}</Text>
+        <Text styles={styles.date}>{date.format("dddd, DD MMMM")} AT {date.format("hh:mm:ss")}</Text>
       </View>
     )
   }

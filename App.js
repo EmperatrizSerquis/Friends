@@ -2,7 +2,8 @@ import BottomTabNavigator from './src/navigation/BottomTabNavigator'
 import { NavigationContainer } from '@react-navigation/native'
 import { Provider } from 'react-redux'
 import { store } from './src/store'
-import { SafeAreaView, StyleSheet,  ActivityIndicator } from 'react-native';
+import { SafeAreaView, StyleSheet,  ActivityIndicator,  StatusBar,
+  Platform, } from 'react-native';
 import fonts from './src/global/fonts'
 import { useFonts } from 'expo-font'
 
@@ -18,11 +19,13 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
+ 
       <Provider store={store}>
         <NavigationContainer>
           <BottomTabNavigator />
         </NavigationContainer>
       </Provider>
+     
     </SafeAreaView>
   )
 
@@ -32,6 +35,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
 
 });

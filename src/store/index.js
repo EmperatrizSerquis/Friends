@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
-import dateSlice from '../features/dateapp/dateSlice'
+import calendarSlice from '../features/calendar/calendarSlice'
 import friendsSlice from '../features/friends/friendsSlice'
 
 export const store = configureStore({
   reducer: {
-    dateapp: dateSlice,
+    calendar: calendarSlice,
     friends: friendsSlice,
   },
 })

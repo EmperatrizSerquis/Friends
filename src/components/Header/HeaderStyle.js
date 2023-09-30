@@ -32,7 +32,7 @@ export default styles = StyleSheet.create({
     backgroundColor: colors.violet,
     paddingLeft: 2,
     paddingVertical: 5,
-    borderRadius: '50%',
+    borderRadius: 5,
     justifyContent: 'center',
     alignItems: 'center',
   }

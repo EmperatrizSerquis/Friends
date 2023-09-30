@@ -1,4 +1,4 @@
-import { Image, Text, View } from 'react-native'
+import { Image, Text, View, ScrollView } from 'react-native'
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5'
 import React from 'react'
 import styles from './DetailsStyle'
@@ -8,6 +8,7 @@ const Details = ({ route }) => {
   const { friend } = route.params
   return (
     <View style={styles.container}>
+      <ScrollView>
       <View style={styles.imageContainer}>
         <Image
           style={styles.image}
@@ -55,6 +56,7 @@ const Details = ({ route }) => {
           <Text style={styles.information}>  {friend.description}</Text>
         </View>
       </View>
+    </ScrollView>
     </View>
   )
 }
