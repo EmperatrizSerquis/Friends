@@ -9,7 +9,7 @@ import { useFonts } from 'expo-font'
 
 const image = { uri: "https://eproweb.net/pictures/about_us_pics/1/blue-bin9VbG.jpg" };
 
-export default function App() {
+const App = () => {
 
   const [fontsLoaded] = useFonts(fonts)
 
@@ -31,6 +31,8 @@ export default function App() {
 
 
 }
+
+export default App
 
 const styles = StyleSheet.create({
   container: {

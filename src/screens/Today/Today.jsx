@@ -1,5 +1,6 @@
 import { Text, View } from 'react-native'
-import  { Calendar }  from '../../components'
+import  { Contactos }  from '../../components'
+import  { NewPicker }  from '../../components'
 import React from 'react'
 import styles from './TodayStyle'
 
@@ -7,8 +8,10 @@ import styles from './TodayStyle'
 const Today = () => {
   return (
     <View styles={styles.container}>
-      <Calendar/>
-      <Text styles={styles.name}>Juan</Text>
+      <NewPicker/>
+      <Text styles={styles.name}>Agenda</Text>
+      <Contactos/>
+      
     </View>
   )
 }

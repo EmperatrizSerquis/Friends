@@ -1,12 +1,12 @@
 import { FlatList, Pressable, Text, View  } from 'react-native'
-import  { Calendar }  from '../../components'
+import  { NewPicker }  from '../../components'
 import React from 'react'
 import styles from './CalledStyle'
 
 const Called = () => {
   return (
     <View styles={styles.container}>   
-      <Calendar/>
+      <NewPicker/>
       <Text styles={styles.name}>Juan</Text>
     </View>
   )

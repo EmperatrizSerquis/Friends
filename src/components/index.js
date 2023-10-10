@@ -2,7 +2,8 @@ import Header from './Header/Header'
 import SearchInput from './SearchInput/SearchInput'
 import List from './List/List'
 import Modal from './Modal/Modal'
-import Calendar from './Calendar/Calendar'
+import NewPicker from './NewPicker/NewPicker'
 import CategoryItem from './CategoryItem/CategoryItem'
+import Contactos from './Contactos/Contactos'
 
-export { Header, SearchInput, List, Modal, Calendar, CategoryItem }
+export { Header, SearchInput, List, Modal, NewPicker, CategoryItem, Contactos }

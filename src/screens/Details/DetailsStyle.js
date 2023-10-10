@@ -14,7 +14,7 @@ export default styles = StyleSheet.create({
   },
   image: {
     width: '20%',
-    height: '100%',
+    height: '80%',
   },
   title: {
     fontSize: 30,
@@ -31,6 +31,7 @@ export default styles = StyleSheet.create({
   informationContainer: {
     width: '100%',
     display: 'flex',
+flex: 1,
     flexDirection: 'column',
     justifyContent: 'center',
     backgroundColor: colors.white,
@@ -39,7 +40,7 @@ export default styles = StyleSheet.create({
     marginTop: 15,
     marginBottom: 5,
     alignItems: 'center',
-    paddingVertical: 25,
+    /* paddingVertical: 25, */
     paddingHorizontal: 10,
     borderRadius: 15,
     gap: 5,

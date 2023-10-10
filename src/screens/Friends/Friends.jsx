@@ -8,14 +8,17 @@ import {
 import React, { useEffect, useState } from 'react'
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5'
 import { SearchInput } from '../../components'
+import { Contactos } from '../../components'
 import { Card } from '../../components'
-import allFriends from '../../data/friends'
+/* import allFriends from '../../data/friends' */
 import styles from './FriendsStyle'
 import { colors } from '../../constants/colors'
+import { useGetCategoriesQuery } from '../../services/friendsApi'
 import { useSelector } from 'react-redux'
 
 const Friends = ({ navigation, route }) => {
-  const [arrFriends, setArrFriends] = useState([])
+  /* const [arrFriends, setArrFriends] = useState([]) */
+  const { data, isLoading } = useGetCategoriesQuery()
   const [keyword, setKeyword] = useState('')
   const category = useSelector(state =>state.friends.categorySelected)
   
@@ -44,15 +47,18 @@ const Friends = ({ navigation, route }) => {
   return (
     <View style={styles.container}>
       <SearchInput onSearch={setKeyword} />
+
       <View style={styles.listContainer}>
+      {!isLoading && (
         <FlatList
-          data={allFriends}
+          data={data}
+          keyExtractor={item => item.id}
           renderItem={({ item }) => (
             <TouchableOpacity
               style={styles.friendContainer}
               onPress={() => navigation.navigate('Details', { friend: item })}
             >  
-              {/* <Card item={item} /> */}
+              {/* <Card item={item,name} navigation={navigation} /> */}
               <Image
                 style={styles.image}
                 source={{
@@ -82,8 +88,9 @@ const Friends = ({ navigation, route }) => {
               
             </TouchableOpacity>
           )}
-          keyExtractor={item => item.id}
+          
         />
+        )}
       </View>
     </View>
   )

@@ -1,4 +1,4 @@
-import { Image, Text, View, ScrollView } from 'react-native'
+import { Image, Text, View, ScrollView, Pressable } from 'react-native'
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5'
 import React from 'react'
 import styles from './DetailsStyle'
@@ -8,7 +8,6 @@ const Details = ({ route }) => {
   const { friend } = route.params
   return (
     <View style={styles.container}>
-      <ScrollView>
       <View style={styles.imageContainer}>
         <Image
           style={styles.image}
@@ -16,11 +15,11 @@ const Details = ({ route }) => {
           resizeMode="cover"
         />
       </View>
-
       <Text style={styles.title}>{friend.name}</Text>
       <Text style={styles.subtitle}>{friend.category}</Text>
       <Text style={styles.title}><FontAwesome5 name="phone-volume" size={30} color={colors.blue} /> {friend.cellPhone}</Text>
       <Text style={styles.subtitle}>{friend.company}</Text>
+      <ScrollView>
       <View style={styles.informationContainer}>
         <View style={styles.itemContainer}>
           <Text style={styles.itemTitle}>Frequency   <FontAwesome5 name="expand-arrows-alt" size={25} color={colors.pink} />   {friend.frequency}</Text>
@@ -56,7 +55,8 @@ const Details = ({ route }) => {
           <Text style={styles.information}>  {friend.description}</Text>
         </View>
       </View>
-    </ScrollView>
+
+      </ScrollView>
     </View>
   )
 }

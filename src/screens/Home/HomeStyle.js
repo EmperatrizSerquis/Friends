@@ -5,7 +5,7 @@ import { colors } from '../../constants/colors'
 export default styles = StyleSheet.create({
   container: {
     flex: 1,
-    /* paddingTop: '2%', */
+    paddingTop: '2%',
     backgroundColor: colors.white,
   },
   image: {
@@ -29,10 +29,10 @@ export default styles = StyleSheet.create({
     paddingHorizontal: '5%',
     fontSize: 35,
     fontWeight: 'bold',
-    backgroundColor: colors.blue,
-    color: colors.white,
-    borderColor: colors.lightblue,
-    borderWidth: 5,
+    backgroundColor: colors.white,
+    color: colors.blue,
+    borderColor: colors.violet,
+    borderWidth: 10,
     width: '100%',
     alignItems: 'center',
     shadowColor: '#9175FF',
@@ -77,7 +77,7 @@ export default styles = StyleSheet.create({
   },
   friendsButton: {
     backgroundColor: colors.blue,
-    paddingHorizontal: 5,
+    paddingHorizontal: 35,
     paddingVertical: 10,
     justifyContent: 'center',
     alignItems: 'center',
